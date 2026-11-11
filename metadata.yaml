@@ -1,0 +1,7 @@
+name: astrbot_plugin_whale_memory_guard
+display_name: 内存守护
+desc: 定时回收无引用对象与空闲堆，支持 Windows、Linux 和 macOS，提供有界状态记录。
+author: mingwu1235-hue
+version: 2.0.0
+astrbot_version: ">=4.29.4,<5"
+repo: https://github.com/mingwu1235-hue/astrbot_plugin_memory_guard
