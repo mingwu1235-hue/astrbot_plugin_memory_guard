@@ -11,8 +11,8 @@
   },
   "interval_seconds": {
     "type": "int",
-    "description": "检查间隔（秒），15至300",
-    "default": 30
+    "description": "资源检查间隔（秒），5至300",
+    "default": 5
   },
   "cooldown_seconds": {
     "type": "int",
@@ -23,5 +23,30 @@
     "type": "int",
     "description": "定时回收间隔（秒），默认15分钟，至少120",
     "default": 900
+  },
+  "cpu_soft_percent": {
+    "type": "float",
+    "description": "CPU轻量保护阈值（百分比）",
+    "default": 50
+  },
+  "cpu_critical_percent": {
+    "type": "float",
+    "description": "CPU紧急保护阈值（百分比）",
+    "default": 70
+  },
+  "memory_critical_percent": {
+    "type": "float",
+    "description": "内存紧急保护阈值（百分比）",
+    "default": 80
+  },
+  "linux_pressure_helper": {
+    "type": "string",
+    "description": "可选管理员安装的受限RVC限速助手，通用安装留空",
+    "default": ""
+  },
+  "network_monitor_enabled": {
+    "type": "bool",
+    "description": "只读记录QQ适配器状态与主机吞吐量，不发送测试流量",
+    "default": true
   }
 }
